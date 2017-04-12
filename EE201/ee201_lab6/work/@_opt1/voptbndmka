@@ -1,0 +1,74 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Documents and Settings\Administrator\Desktop\Everything2\EE201 LAB\L6\ee201_lab6
+T_opt
+Z1 VLfVgTc4fYU1Zl^aK?7X1m1
+Z2 04 16 4 work ee201_lumlock_sm fast 0
+Z3 04 4 4 work glbl fast 0
+Z4 =1-005f06e5837e-506a3a88-36b-254
+Z5 o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unisims_ver -L secureip +acc
+Z6 n@_opt
+Z7 OE;O;10.0c;49
+Z8 dC:\Documents and Settings\Administrator\Desktop\Everything2\EE201 LAB\L6\ee201_lab6
+T_opt1
+Z9 V916Yi7cMTXT5K3:<8M;VS0
+Z10 04 19 4 work ee201_numlock_sm_tb fast 0
+R3
+Z11 =1-005f06e5837e-506a401f-1a5-1d8
+R5
+Z12 n@_opt1
+R7
+R8
+vee201_lumlock_sm
+Z13 Ik>0P1:;CGWG2cV8Gk18_I1
+Z14 VAKD=Ujkj>`fW:SzVWc_GR1
+Z15 dC:\Xilinx_projects\Everything2\EE201 LAB\L6\ee201_lab6
+Z16 w1349140474
+Z17 8ee201_lumlock_sm.v
+Z18 Fee201_lumlock_sm.v
+L0 21
+Z19 OE;L;10.0c;49
+r1
+31
+Z20 !s90 -reportprogress|300|ee201_lumlock_sm.v|
+Z21 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+Z22 !s107 ee201_lumlock_sm.v|
+Z23 !s100 X]MWP<EEkgUJfG=NilFS<3
+Z24 !s108 1349140509.500000
+!s85 0
+vee201_numlock_sm_tb
+Z25 IhAmg?2:]`Ci7QUJ:F>Q120
+Z26 V@[X8JHijJM?32R6RLS=Xe0
+R15
+Z27 w1349140170
+Z28 8ee201_numlock_sm_tb.v
+Z29 Fee201_numlock_sm_tb.v
+L0 25
+R19
+r1
+31
+Z30 !s90 -reportprogress|300|ee201_numlock_sm_tb.v|
+R21
+Z31 !s107 ee201_numlock_sm_tb.v|
+Z32 !s100 fX3lJKkFS<TS6eQOh@CM21
+Z33 !s108 1349140208.750000
+!s85 0
+vglbl
+Z34 I:609Ji6AoC`RMk3BhhbY=1
+Z35 VM[9mS]S:KA1i4VeCMX35[3
+R15
+Z36 w1308634177
+Z37 8C:/Xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v
+Z38 FC:/Xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v
+L0 5
+R19
+r1
+31
+R21
+Z39 !s100 4=LmVFjWGlXARKf5L_9V<3
+Z40 !s90 -reportprogress|300|C:/Xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v|
+Z41 !s108 1349139219.890000
+Z42 !s107 C:/Xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v|
+!s85 0
