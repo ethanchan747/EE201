@@ -1,0 +1,65 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Jacob\Xilinx\ee201_detour
+T_opt
+Z1 VQcR;6geGT@S2Pa9GR7CXm3
+Z2 04 34 4 work ee201l_detour_ee201l_detour_sch_tb fast 0
+Z3 04 4 4 work glbl fast 0
+Z4 =1-000c29ccf9fe-50566957-261-1d8
+Z5 o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unisims_ver -L secureip +acc
+Z6 n@_opt
+Z7 OE;O;10.0b;49
+Z8 dC:\Users\Jacob\Xilinx\ee201_detour
+vee201l_detour
+Z9 !s100 Y<YShE]>53M`C8<P_]`Vn3
+Z10 I[KPP1Lm^C:N@nd<KPOS:11
+Z11 V2>BzU?3VB>3E4N:>Ra[z^3
+Z12 dC:\Documents and Settings\student\Desktop\EE201\ee201_detour\ee201_detour
+Z13 w1347840178
+Z14 8ee201l_detour.vf
+Z15 Fee201l_detour.vf
+L0 23
+Z16 OE;L;10.0b;49
+r1
+31
+Z17 !s90 -reportprogress|300|ee201l_detour.vf|
+Z18 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+Z19 !s108 1347840562.921000
+Z20 !s107 ee201l_detour.vf|
+!s85 0
+vee201l_detour_ee201l_detour_sch_tb
+Z21 !s100 >]]R?D@k]LXFEE6:Ai2fO2
+Z22 I7RICU`Bo7h>@jC9Ha4Bei0
+Z23 VcC?Si3f]cgPPVWI:Bf[8W0
+R12
+Z24 w1347838671
+Z25 8ee201l_detour_tb.v
+Z26 Fee201l_detour_tb.v
+L0 5
+R16
+r1
+31
+Z27 !s90 -reportprogress|300|ee201l_detour_tb.v|
+R18
+!s85 0
+Z28 !s108 1347840562.968000
+Z29 !s107 ee201l_detour_tb.v|
+vglbl
+Z30 !s100 4=LmVFjWGlXARKf5L_9V<3
+Z31 I:609Ji6AoC`RMk3BhhbY=1
+Z32 VM[9mS]S:KA1i4VeCMX35[3
+R12
+Z33 w1308634177
+Z34 8C:/Xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v
+Z35 FC:/Xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v
+L0 5
+R16
+r1
+!s85 0
+31
+!s108 1347840563.015000
+!s107 C:/Xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v|
+Z36 !s90 -reportprogress|300|C:/Xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v|
+R18
