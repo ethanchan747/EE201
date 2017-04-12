@@ -1,0 +1,6 @@
+verilog work "onehot_to_hex_16bit.vf"
+verilog work "mux8bit_4x1.vf"
+verilog work "mux8bit_2x1.vf"
+verilog work "hex_to_ssd.vf"
+verilog work "ee201l_detour.vf"
+verilog work "ee201l_detour_top_PART3_method2.vf"

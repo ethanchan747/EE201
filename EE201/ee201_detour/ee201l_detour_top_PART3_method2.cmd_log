@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Documents and Settings/Administrator/Desktop/ee201_detour/ee201l_detour_top_PART3_method2.xst" -ofn "C:/Documents and Settings/Administrator/Desktop/ee201_detour/ee201l_detour_top_PART3_method2.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/Administrator/Desktop/ee201_detour/ee201l_detour_top_PART3_method2.xst" -ofn "C:/Documents and Settings/Administrator/Desktop/ee201_detour/ee201l_detour_top_PART3_method2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ee201l_detour_top.ucf -p xc6slx16-csg324-3 "ee201l_detour_top_PART3_method2.ngc" ee201l_detour_top_PART3_method2.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ee201l_detour_top_PART3_method2_map.ncd ee201l_detour_top_PART3_method2.ngd ee201l_detour_top_PART3_method2.pcf 
+par -w -intstyle ise -ol high -mt off ee201l_detour_top_PART3_method2_map.ncd ee201l_detour_top_PART3_method2.ncd ee201l_detour_top_PART3_method2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ee201l_detour_top_PART3_method2.twx ee201l_detour_top_PART3_method2.ncd -o ee201l_detour_top_PART3_method2.twr ee201l_detour_top_PART3_method2.pcf -ucf ee201l_detour_top.ucf 
+bitgen -intstyle ise -f ee201l_detour_top_PART3_method2.ut ee201l_detour_top_PART3_method2.ncd 

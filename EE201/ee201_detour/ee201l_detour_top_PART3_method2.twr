@@ -1,0 +1,535 @@
+--------------------------------------------------------------------------------
+Release 13.2 Trace  (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\13.2\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml ee201l_detour_top_PART3_method2.twx
+ee201l_detour_top_PART3_method2.ncd -o ee201l_detour_top_PART3_method2.twr
+ee201l_detour_top_PART3_method2.pcf -ucf ee201l_detour_top.ucf
+
+Design file:              ee201l_detour_top_PART3_method2.ncd
+Physical constraint file: ee201l_detour_top_PART3_method2.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.19 2011-06-20)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 
+50%;
+
+ 351 paths analyzed, 97 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.265ns.
+--------------------------------------------------------------------------------
+
+Paths for end point XLXI_185/Q_0 (SLICE_X28Y21.CE), 24 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     6.735ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_2/Q_4 (FF)
+  Destination:          XLXI_185/Q_0 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.227ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.003ns (0.264 - 0.267)
+  Source Clock:         CLK rising at 0.000ns
+  Destination Clock:    CLK rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: XLXI_2/Q_4 to XLXI_185/Q_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y24.AQ      Tcko                  0.447   n0001<7>
+                                                       XLXI_2/Q_4
+    SLICE_X27Y24.A2      net (fanout=2)        0.605   XLXI_2/Q<4>
+    SLICE_X27Y24.A       Tilo                  0.259   XLXI_2/Mmux_TC11
+                                                       XLXI_2/Mmux_TC12
+    SLICE_X24Y26.A4      net (fanout=1)        0.653   XLXI_2/Mmux_TC11
+    SLICE_X24Y26.A       Tilo                  0.205   XLXI_2/Mmux_TC12
+                                                       XLXI_2/CEO1
+    SLICE_X28Y21.CE      net (fanout=1)        0.723   XLXN_522
+    SLICE_X28Y21.CLK     Tceck                 0.335   n0000<1>
+                                                       XLXI_185/Q_0
+    -------------------------------------------------  ---------------------------
+    Total                                      3.227ns (1.246ns logic, 1.981ns route)
+                                                       (38.6% logic, 61.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     6.736ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_2/Q_8 (FF)
+  Destination:          XLXI_185/Q_0 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.224ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.005ns (0.264 - 0.269)
+  Source Clock:         CLK rising at 0.000ns
+  Destination Clock:    CLK rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: XLXI_2/Q_8 to XLXI_185/Q_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y25.AQ      Tcko                  0.447   XLXI_2/Q<11>
+                                                       XLXI_2/Q_8
+    SLICE_X27Y24.A1      net (fanout=2)        0.602   XLXI_2/Q<8>
+    SLICE_X27Y24.A       Tilo                  0.259   XLXI_2/Mmux_TC11
+                                                       XLXI_2/Mmux_TC12
+    SLICE_X24Y26.A4      net (fanout=1)        0.653   XLXI_2/Mmux_TC11
+    SLICE_X24Y26.A       Tilo                  0.205   XLXI_2/Mmux_TC12
+                                                       XLXI_2/CEO1
+    SLICE_X28Y21.CE      net (fanout=1)        0.723   XLXN_522
+    SLICE_X28Y21.CLK     Tceck                 0.335   n0000<1>
+                                                       XLXI_185/Q_0
+    -------------------------------------------------  ---------------------------
+    Total                                      3.224ns (1.246ns logic, 1.978ns route)
+                                                       (38.6% logic, 61.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     6.833ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_1/Q_1 (FF)
+  Destination:          XLXI_185/Q_0 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.138ns (Levels of Logic = 3)
+  Clock Path Skew:      0.006ns (0.264 - 0.258)
+  Source Clock:         CLK rising at 0.000ns
+  Destination Clock:    CLK rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: XLXI_1/Q_1 to XLXI_185/Q_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X22Y25.BQ      Tcko                  0.447   XLXI_1/Q<3>
+                                                       XLXI_1/Q_1
+    SLICE_X24Y26.C4      net (fanout=2)        0.563   XLXI_1/Q<1>
+    SLICE_X24Y26.C       Tilo                  0.205   XLXI_2/Mmux_TC12
+                                                       XLXI_1/Mmux_TC1_SW0
+    SLICE_X24Y26.B4      net (fanout=1)        0.278   XLXI_1/N01
+    SLICE_X24Y26.B       Tilo                  0.205   XLXI_2/Mmux_TC12
+                                                       XLXI_1/Mmux_TC1
+    SLICE_X24Y26.A5      net (fanout=5)        0.177   XLXN_1
+    SLICE_X24Y26.A       Tilo                  0.205   XLXI_2/Mmux_TC12
+                                                       XLXI_2/CEO1
+    SLICE_X28Y21.CE      net (fanout=1)        0.723   XLXN_522
+    SLICE_X28Y21.CLK     Tceck                 0.335   n0000<1>
+                                                       XLXI_185/Q_0
+    -------------------------------------------------  ---------------------------
+    Total                                      3.138ns (1.397ns logic, 1.741ns route)
+                                                       (44.5% logic, 55.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point XLXI_185/Q_1 (SLICE_X28Y21.CE), 24 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     6.774ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_2/Q_4 (FF)
+  Destination:          XLXI_185/Q_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.188ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.003ns (0.264 - 0.267)
+  Source Clock:         CLK rising at 0.000ns
+  Destination Clock:    CLK rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: XLXI_2/Q_4 to XLXI_185/Q_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y24.AQ      Tcko                  0.447   n0001<7>
+                                                       XLXI_2/Q_4
+    SLICE_X27Y24.A2      net (fanout=2)        0.605   XLXI_2/Q<4>
+    SLICE_X27Y24.A       Tilo                  0.259   XLXI_2/Mmux_TC11
+                                                       XLXI_2/Mmux_TC12
+    SLICE_X24Y26.A4      net (fanout=1)        0.653   XLXI_2/Mmux_TC11
+    SLICE_X24Y26.A       Tilo                  0.205   XLXI_2/Mmux_TC12
+                                                       XLXI_2/CEO1
+    SLICE_X28Y21.CE      net (fanout=1)        0.723   XLXN_522
+    SLICE_X28Y21.CLK     Tceck                 0.296   n0000<1>
+                                                       XLXI_185/Q_1
+    -------------------------------------------------  ---------------------------
+    Total                                      3.188ns (1.207ns logic, 1.981ns route)
+                                                       (37.9% logic, 62.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     6.775ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_2/Q_8 (FF)
+  Destination:          XLXI_185/Q_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.185ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.005ns (0.264 - 0.269)
+  Source Clock:         CLK rising at 0.000ns
+  Destination Clock:    CLK rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: XLXI_2/Q_8 to XLXI_185/Q_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y25.AQ      Tcko                  0.447   XLXI_2/Q<11>
+                                                       XLXI_2/Q_8
+    SLICE_X27Y24.A1      net (fanout=2)        0.602   XLXI_2/Q<8>
+    SLICE_X27Y24.A       Tilo                  0.259   XLXI_2/Mmux_TC11
+                                                       XLXI_2/Mmux_TC12
+    SLICE_X24Y26.A4      net (fanout=1)        0.653   XLXI_2/Mmux_TC11
+    SLICE_X24Y26.A       Tilo                  0.205   XLXI_2/Mmux_TC12
+                                                       XLXI_2/CEO1
+    SLICE_X28Y21.CE      net (fanout=1)        0.723   XLXN_522
+    SLICE_X28Y21.CLK     Tceck                 0.296   n0000<1>
+                                                       XLXI_185/Q_1
+    -------------------------------------------------  ---------------------------
+    Total                                      3.185ns (1.207ns logic, 1.978ns route)
+                                                       (37.9% logic, 62.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     6.872ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_1/Q_1 (FF)
+  Destination:          XLXI_185/Q_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.099ns (Levels of Logic = 3)
+  Clock Path Skew:      0.006ns (0.264 - 0.258)
+  Source Clock:         CLK rising at 0.000ns
+  Destination Clock:    CLK rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: XLXI_1/Q_1 to XLXI_185/Q_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X22Y25.BQ      Tcko                  0.447   XLXI_1/Q<3>
+                                                       XLXI_1/Q_1
+    SLICE_X24Y26.C4      net (fanout=2)        0.563   XLXI_1/Q<1>
+    SLICE_X24Y26.C       Tilo                  0.205   XLXI_2/Mmux_TC12
+                                                       XLXI_1/Mmux_TC1_SW0
+    SLICE_X24Y26.B4      net (fanout=1)        0.278   XLXI_1/N01
+    SLICE_X24Y26.B       Tilo                  0.205   XLXI_2/Mmux_TC12
+                                                       XLXI_1/Mmux_TC1
+    SLICE_X24Y26.A5      net (fanout=5)        0.177   XLXN_1
+    SLICE_X24Y26.A       Tilo                  0.205   XLXI_2/Mmux_TC12
+                                                       XLXI_2/CEO1
+    SLICE_X28Y21.CE      net (fanout=1)        0.723   XLXN_522
+    SLICE_X28Y21.CLK     Tceck                 0.296   n0000<1>
+                                                       XLXI_185/Q_1
+    -------------------------------------------------  ---------------------------
+    Total                                      3.099ns (1.358ns logic, 1.741ns route)
+                                                       (43.8% logic, 56.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point XLXI_2/Q_4 (SLICE_X26Y24.CE), 8 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     7.180ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_1/Q_1 (FF)
+  Destination:          XLXI_2/Q_4 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      2.780ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.005ns (0.253 - 0.258)
+  Source Clock:         CLK rising at 0.000ns
+  Destination Clock:    CLK rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: XLXI_1/Q_1 to XLXI_2/Q_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X22Y25.BQ      Tcko                  0.447   XLXI_1/Q<3>
+                                                       XLXI_1/Q_1
+    SLICE_X24Y26.C4      net (fanout=2)        0.563   XLXI_1/Q<1>
+    SLICE_X24Y26.C       Tilo                  0.205   XLXI_2/Mmux_TC12
+                                                       XLXI_1/Mmux_TC1_SW0
+    SLICE_X24Y26.B4      net (fanout=1)        0.278   XLXI_1/N01
+    SLICE_X24Y26.B       Tilo                  0.205   XLXI_2/Mmux_TC12
+                                                       XLXI_1/Mmux_TC1
+    SLICE_X26Y24.CE      net (fanout=5)        0.751   XLXN_1
+    SLICE_X26Y24.CLK     Tceck                 0.331   n0001<7>
+                                                       XLXI_2/Q_4
+    -------------------------------------------------  ---------------------------
+    Total                                      2.780ns (1.188ns logic, 1.592ns route)
+                                                       (42.7% logic, 57.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     7.212ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_1/Q_0 (FF)
+  Destination:          XLXI_2/Q_4 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      2.748ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.005ns (0.253 - 0.258)
+  Source Clock:         CLK rising at 0.000ns
+  Destination Clock:    CLK rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: XLXI_1/Q_0 to XLXI_2/Q_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X22Y25.AQ      Tcko                  0.447   XLXI_1/Q<3>
+                                                       XLXI_1/Q_0
+    SLICE_X24Y26.C3      net (fanout=2)        0.531   XLXI_1/Q<0>
+    SLICE_X24Y26.C       Tilo                  0.205   XLXI_2/Mmux_TC12
+                                                       XLXI_1/Mmux_TC1_SW0
+    SLICE_X24Y26.B4      net (fanout=1)        0.278   XLXI_1/N01
+    SLICE_X24Y26.B       Tilo                  0.205   XLXI_2/Mmux_TC12
+                                                       XLXI_1/Mmux_TC1
+    SLICE_X26Y24.CE      net (fanout=5)        0.751   XLXN_1
+    SLICE_X26Y24.CLK     Tceck                 0.331   n0001<7>
+                                                       XLXI_2/Q_4
+    -------------------------------------------------  ---------------------------
+    Total                                      2.748ns (1.188ns logic, 1.560ns route)
+                                                       (43.2% logic, 56.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     7.338ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_1/Q_2 (FF)
+  Destination:          XLXI_2/Q_4 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      2.622ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.005ns (0.253 - 0.258)
+  Source Clock:         CLK rising at 0.000ns
+  Destination Clock:    CLK rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: XLXI_1/Q_2 to XLXI_2/Q_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X22Y25.CQ      Tcko                  0.447   XLXI_1/Q<3>
+                                                       XLXI_1/Q_2
+    SLICE_X24Y26.C5      net (fanout=2)        0.405   XLXI_1/Q<2>
+    SLICE_X24Y26.C       Tilo                  0.205   XLXI_2/Mmux_TC12
+                                                       XLXI_1/Mmux_TC1_SW0
+    SLICE_X24Y26.B4      net (fanout=1)        0.278   XLXI_1/N01
+    SLICE_X24Y26.B       Tilo                  0.205   XLXI_2/Mmux_TC12
+                                                       XLXI_1/Mmux_TC1
+    SLICE_X26Y24.CE      net (fanout=5)        0.751   XLXN_1
+    SLICE_X26Y24.CLK     Tceck                 0.331   n0001<7>
+                                                       XLXI_2/Q_4
+    -------------------------------------------------  ---------------------------
+    Total                                      2.622ns (1.188ns logic, 1.434ns route)
+                                                       (45.3% logic, 54.7% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point XLXI_185/Q_1 (SLICE_X28Y21.B5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.512ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               XLXI_185/Q_1 (FF)
+  Destination:          XLXI_185/Q_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.512ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK rising at 10.000ns
+  Destination Clock:    CLK rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: XLXI_185/Q_1 to XLXI_185/Q_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X28Y21.BQ      Tcko                  0.200   n0000<1>
+                                                       XLXI_185/Q_1
+    SLICE_X28Y21.B5      net (fanout=3)        0.078   n0000<1>
+    SLICE_X28Y21.CLK     Tah         (-Th)    -0.234   n0000<1>
+                                                       n0000<1>_rt
+                                                       XLXI_185/Mcount_Q_xor<1>
+                                                       XLXI_185/Q_1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.512ns (0.434ns logic, 0.078ns route)
+                                                       (84.8% logic, 15.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point XLXI_2/Q_15 (SLICE_X26Y26.D6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.521ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               XLXI_2/Q_15 (FF)
+  Destination:          XLXI_2/Q_15 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.521ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK rising at 10.000ns
+  Destination Clock:    CLK rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: XLXI_2/Q_15 to XLXI_2/Q_15
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y26.DQ      Tcko                  0.234   XLXI_2/Q<15>
+                                                       XLXI_2/Q_15
+    SLICE_X26Y26.D6      net (fanout=2)        0.023   XLXI_2/Q<15>
+    SLICE_X26Y26.CLK     Tah         (-Th)    -0.264   XLXI_2/Q<15>
+                                                       XLXI_2/Q<15>_rt
+                                                       XLXI_2/Mcount_Q_xor<15>
+                                                       XLXI_2/Q_15
+    -------------------------------------------------  ---------------------------
+    Total                                      0.521ns (0.498ns logic, 0.023ns route)
+                                                       (95.6% logic, 4.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point XLXI_1/Q_7 (SLICE_X22Y26.D6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.521ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               XLXI_1/Q_7 (FF)
+  Destination:          XLXI_1/Q_7 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.521ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK rising at 10.000ns
+  Destination Clock:    CLK rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: XLXI_1/Q_7 to XLXI_1/Q_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X22Y26.DQ      Tcko                  0.234   XLXI_1/Q<7>
+                                                       XLXI_1/Q_7
+    SLICE_X22Y26.D6      net (fanout=2)        0.023   XLXI_1/Q<7>
+    SLICE_X22Y26.CLK     Tah         (-Th)    -0.264   XLXI_1/Q<7>
+                                                       XLXI_1/Q<7>_rt
+                                                       XLXI_1/Mcount_Q_xor<7>
+                                                       XLXI_1/Q_7
+    -------------------------------------------------  ---------------------------
+    Total                                      0.521ns (0.498ns logic, 0.023ns route)
+                                                       (95.6% logic, 4.4% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 8.270ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 1.730ns (578.035MHz) (Tbcper_I)
+  Physical resource: XLXI_5/BUFG/I0
+  Logical resource: XLXI_5/BUFG/I0
+  Location pin: BUFGMUX_X3Y13.I0
+  Clock network: XLXI_5/IBUFG
+--------------------------------------------------------------------------------
+Slack: 9.570ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 0.430ns (2325.581MHz) (Tcp)
+  Physical resource: n0000<1>/CLK
+  Logical resource: XLXI_185/Q_0/CK
+  Location pin: SLICE_X28Y21.CLK
+  Clock network: CLK
+--------------------------------------------------------------------------------
+Slack: 9.570ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 0.215ns (Trpw)
+  Physical resource: n0000<1>/SR
+  Logical resource: XLXI_185/Q_0/SR
+  Location pin: SLICE_X28Y21.SR
+  Clock network: BtnC_IBUF
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock CLKPORT
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLKPORT        |    3.265|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 351 paths, 0 nets, and 72 connections
+
+Design statistics:
+   Minimum period:   3.265ns{1}   (Maximum frequency: 306.279MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Mon Oct 08 11:18:03 2012 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 126 MB
+
+
+
