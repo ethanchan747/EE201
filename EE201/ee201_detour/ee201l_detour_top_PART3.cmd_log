@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Documents and Settings/Administrator/Desktop/ee201_detour/ee201l_detour_top_PART3.xst" -ofn "C:/Documents and Settings/Administrator/Desktop/ee201_detour/ee201l_detour_top_PART3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ee201l_detour_top.ucf -p xc6slx16-csg324-3 "ee201l_detour_top_PART3.ngc" ee201l_detour_top_PART3.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ee201l_detour_top_PART3_map.ncd ee201l_detour_top_PART3.ngd ee201l_detour_top_PART3.pcf 
+par -w -intstyle ise -ol high -mt off ee201l_detour_top_PART3_map.ncd ee201l_detour_top_PART3.ncd ee201l_detour_top_PART3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ee201l_detour_top_PART3.twx ee201l_detour_top_PART3.ncd -o ee201l_detour_top_PART3.twr ee201l_detour_top_PART3.pcf -ucf ee201l_detour_top.ucf 
+bitgen -intstyle ise -f ee201l_detour_top_PART3.ut ee201l_detour_top_PART3.ncd 
