@@ -1,0 +1,45 @@
+# Reading C:/modeltech_10.0c/tcl/vsim/pref.tcl 
+# //  ModelSim SE 10.0c Jul 21 2011 
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {divider_tb.fdo} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE vlog 10.0c Compiler 2011.07 Jul 21 2011
+# -- Compiling module divider_timing
+# 
+# Top level modules:
+# 	divider_timing
+# Model Technology ModelSim SE vlog 10.0c Compiler 2011.07 Jul 21 2011
+# -- Compiling module divider_tb
+# 
+# Top level modules:
+# 	divider_tb
+# Model Technology ModelSim SE vlog 10.0c Compiler 2011.07 Jul 21 2011
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# vsim -L xilinxcorelib_ver -L unisims_ver -L secureip -lib work -voptargs=\"+acc\" -t 1ps work.divider_tb glbl 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "divider_timing".
+# Loading work.divider_tb(fast)
+# Loading work.divider_timing(fast)
+# Loading work.glbl(fast)
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Inputs:   Xin = 15 and Yin =  2
+# Results:  Quotient =  7 and Remainder =  1
+# Inputs:   Xin =  5 and Yin =  8
+# Results:  Quotient =  0 and Remainder =  5
+# Inputs:   Xin = 11 and Yin =  3
+# Results:  Quotient =  3 and Remainder =  2
+# Inputs:   Xin = 15 and Yin =  1
+# Results:  Quotient = 15 and Remainder =  0
+#  
