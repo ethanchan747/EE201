@@ -1,0 +1,84 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Xilinx_projects\ee201L_GCD
+T_opt
+Z1 VBQ[fZhg71Vz_j`SBlQUP32
+Z2 04 18 4 work ee201_GCD_CEN_tb_v fast 0
+Z3 04 4 4 work glbl fast 0
+Z4 =1-005f06e5837e-507ca538-6d-b38
+Z5 o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unisims_ver +acc
+Z6 n@_opt
+Z7 OE;O;10.0c;49
+Z8 dC:\Xilinx_projects\ee201L_GCD
+vee201_debouncer
+!s100 =T0hm_cB3aWVf?VIZ`i]c3
+ID0XHVJHfESMGS;=T@R3KQ2
+V^bCdY<PHkM?:ifL3c?Q5<0
+R8
+w1348514804
+8../L7/ee201L_GCD/ee201_debounce_DPB_SCEN_CCEN_MCEN_r1.v
+F../L7/ee201L_GCD/ee201_debounce_DPB_SCEN_CCEN_MCEN_r1.v
+L0 92
+Z9 OE;L;10.0c;49
+r1
+!s85 0
+31
+!s108 1350348489.781000
+!s107 ../L7/ee201L_GCD/ee201_debounce_DPB_SCEN_CCEN_MCEN_r1.v|
+!s90 -reportprogress|300|../L7/ee201L_GCD/ee201_debounce_DPB_SCEN_CCEN_MCEN_r1.v|
+Z10 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+vee201_GCD
+Z11 !s100 JE2JTfa5b?5FN?TMHP;Bk0
+Z12 IQe<;b=J1A4a@?fcL8n[HW3
+Z13 V;9]j]dQEhRNOQE`AIKV^33
+R8
+Z14 w1350346000
+Z15 8../L7/ee201L_GCD/ee201_GCD.v
+Z16 F../L7/ee201L_GCD/ee201_GCD.v
+L0 16
+R9
+r1
+31
+Z17 !s90 -reportprogress|300|../L7/ee201L_GCD/ee201_GCD.v|
+R10
+Z18 nee201_@g@c@d
+!s85 0
+Z19 !s108 1350348489.484000
+Z20 !s107 ../L7/ee201L_GCD/ee201_GCD.v|
+vee201_GCD_CEN_tb_v
+Z21 !s100 T`dXK9==nL[?b<hjYg;YC3
+Z22 I9D7Anb5EIhUAIecT13L:;0
+Z23 VAVKdf7UOQ5eb8ZL0aH]id2
+R8
+Z24 w1350346355
+Z25 8../L7/ee201L_GCD/ee201_GCD_tb.v
+Z26 F../L7/ee201L_GCD/ee201_GCD_tb.v
+L0 15
+R9
+r1
+31
+Z27 !s90 -reportprogress|300|../L7/ee201L_GCD/ee201_GCD_tb.v|
+R10
+Z28 nee201_@g@c@d_@c@e@n_tb_v
+Z29 !s108 1350346408.796000
+Z30 !s107 ../L7/ee201L_GCD/ee201_GCD_tb.v|
+!s85 0
+vglbl
+Z31 !s100 4=LmVFjWGlXARKf5L_9V<3
+Z32 I:609Ji6AoC`RMk3BhhbY=1
+Z33 VM[9mS]S:KA1i4VeCMX35[3
+R8
+Z34 w1308634177
+Z35 8C:/Xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v
+Z36 FC:/Xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v
+L0 5
+R9
+r1
+31
+Z37 !s90 -reportprogress|300|C:/Xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v|
+R10
+Z38 !s108 1350346408.937000
+Z39 !s107 C:/Xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v|
+!s85 0
