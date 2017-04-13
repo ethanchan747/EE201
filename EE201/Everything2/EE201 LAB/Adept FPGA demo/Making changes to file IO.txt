@@ -1,0 +1,60 @@
+
+This document acts as a starting point for students and TA's to change the File IO files with minimum modification
+=====================================================
+
+NOTE: We have tuned the FILE IO to read numbers only so we will request TA's to constrained the students to select projects where processing requires students to deal with numbers only. If student want to process alpha-numeric characters they need to come up with an encoding and decoding mechanism so that the files being processed in FPGA contains numeric values only.
+
+   If one want to access the File IO with minimum modification , I would suggest him/her to provide an input file with 8 digit numbers only.
+---------------------------------------------------------------
+
+As a starting point we are being given a file which we would like to read and process on FPGA.
+
+
+Constraints:
+  Maximum number of rows to be read = 28-1 (since address sent on EPP is 8 bit)
+
+The file contains:
+  Number of lines of multi-digit numbers.
+Let us fix a few parameters:
+     Digits_per_number = total digits in multidigit number
+     Address_width = log2(number of lines)
+     Num_mem_cells = 2Address_width - 1
+     Data_width = Digits_per_number*4; (since we are dealing with nibbles only)
+     
+
+Now firstly we will need to change the variables
+
+wire[address_width - 1:0] Addr; 
+reg [Data_width-1:0] Data_to;
+wire [Data_width-1:0] Data_from; 
+reg [Data_width-1:0] regarray [0:Num_mem_cells]; 
+reg [3:0] nibble_array [0:digits_per_number - 1];
+reg [address_width-1:0] nib_count; //to count the nibbles 
+
+Now in the code we need to do the following modification for all instances
+--------------------------------------------------------------------------
+assign Addr = line_pointer[Address_width-1:0]; 
+
+assign Data_from = regarray[Addr[Address_width-1:0]]; 
+
+
+if((nib_count == Digits_per_number+2)||(nib_count == Digits_per_number+1)) 
+
+
+Data_to <= {nibble_array[Digits_per_number-1],nibble_array[Digits_per_number-2],...,nibble_array[1],nibble_array[0]}; 
+
+always @(*) //for writing to file in reverse nibble by nibble
+	begin
+	    case(nib_count)
+   'hDigits_per_number-1: BINARY = Data_from[Data_width-1:Data_width-4];
+		   .
+                 .
+                 .
+   'h0:Data_from[3:0];    
+    default: BINARY = Data_from[3:0];
+		 endcase
+	end
+
+
+========================================================================
+If stuck up somewhere I can be reached at: prasanjd@usc.edu
