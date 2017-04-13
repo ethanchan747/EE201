@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {C:/Documents and Settings/student/Desktop/ee201l_merge_arrays/merge_arrays_mcu_top.v} -lang verilog -prj ee201l_merge_arrays -o merge_arrays_mcu_top.spl -module merge_arrays_mcu_top -template C:/Xilinx/13.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 merge_arrays_mcu_top.spl {C:/Documents and Settings/student/Desktop/ee201l_merge_arrays/merge_arrays_mcu_top.sym} 

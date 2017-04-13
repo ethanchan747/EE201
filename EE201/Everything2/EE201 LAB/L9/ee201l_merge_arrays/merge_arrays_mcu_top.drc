@@ -1,0 +1,8 @@
+Release 13.2 Drc O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Mon Oct 29 18:51:12 2012
+
+drc -z merge_arrays_mcu_top.ncd merge_arrays_mcu_top.pcf
+
+DRC detected 0 errors and 0 warnings.
