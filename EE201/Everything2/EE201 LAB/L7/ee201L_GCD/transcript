@@ -1,0 +1,34 @@
+# Reading C:/modeltech_10.0c/tcl/vsim/pref.tcl 
+# //  ModelSim SE 10.0c Jul 21 2011 
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {ee201_GCD_top.fdo} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE vlog 10.0c Compiler 2011.07 Jul 21 2011
+# -- Compiling module ee201_GCD
+# 
+# Top level modules:
+# 	ee201_GCD
+# Model Technology ModelSim SE vlog 10.0c Compiler 2011.07 Jul 21 2011
+# -- Compiling module ee201_debouncer
+# 
+# Top level modules:
+# 	ee201_debouncer
+# Model Technology ModelSim SE vlog 10.0c Compiler 2011.07 Jul 21 2011
+# -- Compiling module ee201_GCD_top
+# ** Error: ../L7/ee201L_GCD/ee201_GCD_top.v(193): Register is illegal in left-hand side of continuous assignment
+# ** Error: ../L7/ee201L_GCD/ee201_GCD_top.v(194): Register is illegal in left-hand side of continuous assignment
+# ** Error: ../L7/ee201L_GCD/ee201_GCD_top.v(195): Register is illegal in left-hand side of continuous assignment
+# ** Error: ../L7/ee201L_GCD/ee201_GCD_top.v(196): Register is illegal in left-hand side of continuous assignment
+# ** Error: C:/modeltech_10.0c/win32/vlog failed.
+# Error in macro ./ee201_GCD_top.fdo line 25
+# C:/modeltech_10.0c/win32/vlog failed.
+#     while executing
+# "vlog  "../L7/ee201L_GCD/ee201_GCD_top.v""
+#  

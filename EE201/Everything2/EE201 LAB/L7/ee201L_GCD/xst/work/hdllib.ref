@@ -1,0 +1,4 @@
+MO ee201_GCD NULL ../L7/ee201L_GCD/ee201_GCD.v vlg3E/ee201___g_c_d.bin 1350348872
+MO ee201_GCD_top NULL ../L7/ee201L_GCD/ee201_GCD_top.v vlg30/ee201___g_c_d__top.bin 1350348872
+MO ee201_debounce_DPB_SCEN_CCEN_MCEN_tb NULL ../L7/ee201L_GCD/ee201_debounce_DPB_SCEN_CCEN_MCEN_tb_r1.v vlg61/ee201__debounce___d_p_b___s_c_e_n___c_c_e_n___m_c_e_n__tb.bin 1350348755
+MO ee201_debouncer NULL ../L7/ee201L_GCD/ee201_debounce_DPB_SCEN_CCEN_MCEN_r1.v vlg1F/ee201__debouncer.bin 1350348872

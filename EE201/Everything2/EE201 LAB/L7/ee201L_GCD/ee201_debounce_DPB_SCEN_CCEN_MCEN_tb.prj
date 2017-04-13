@@ -1,0 +1,2 @@
+verilog work "../L7/ee201L_GCD/ee201_debounce_DPB_SCEN_CCEN_MCEN_r1.v"
+verilog work "../L7/ee201L_GCD/ee201_debounce_DPB_SCEN_CCEN_MCEN_tb_r1.v"

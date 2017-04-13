@@ -1,0 +1,8 @@
+Release 13.2 Drc O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Mon Oct 15 18:05:11 2012
+
+drc -z ee201_GCD_top.ncd ee201_GCD_top.pcf
+
+DRC detected 0 errors and 0 warnings.
