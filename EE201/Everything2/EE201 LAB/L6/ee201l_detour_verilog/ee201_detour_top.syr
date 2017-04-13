@@ -1,0 +1,538 @@
+Release 13.2 - xst O.61xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: ee201_detour_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ee201_detour_top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ee201_detour_top"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : ee201_detour_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file \"C:\Xilinx_projects\ee201l_detour\ee201l_detour_verilog\ee201_detour_sm.v\" into library work
+Parsing module <ee201_detour_sm>.
+Analyzing Verilog file \"C:\Xilinx_projects\ee201l_detour\ee201l_detour_verilog\ee201_detour_top.v\" into library work
+Parsing module <ee201_detour_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <ee201_detour_top>.
+
+Elaborating module <BUFGP>.
+
+Elaborating module <ee201_detour_sm>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ee201_detour_top>.
+    Related source file is "c:/xilinx_projects/ee201l_detour/ee201l_detour_verilog/ee201_detour_top.v".
+    Found 27-bit register for signal <DIV_CLK>.
+    Found 27-bit adder for signal <DIV_CLK[26]_GND_1_o_add_1_OUT> created at line 106.
+    Found 7-bit 4-to-1 multiplexer for signal <SSD> created at line 238.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  27 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <ee201_detour_top> synthesized.
+
+Synthesizing Unit <ee201_detour_sm>.
+    Related source file is "c:/xilinx_projects/ee201l_detour/ee201l_detour_verilog/ee201_detour_sm.v".
+    Found 7-bit register for signal <state>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 14                                             |
+    | Clock              | Clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000001                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <ee201_detour_sm> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 27-bit adder                                          : 1
+# Registers                                            : 1
+ 27-bit register                                       : 1
+# Multiplexers                                         : 1
+ 7-bit 4-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <ee201_detour_top>.
+The following registers are absorbed into counter <DIV_CLK>: 1 register on signal <DIV_CLK>.
+Unit <ee201_detour_top> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 27-bit up counter                                     : 1
+# Multiplexers                                         : 1
+ 7-bit 4-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state[1:7]> with user encoding.
+---------------------
+ State   | Encoding
+---------------------
+ 0000001 | 0000001
+ 0000010 | 0000010
+ 0000100 | 0000100
+ 0001000 | 0001000
+ 0010000 | 0010000
+ 0100000 | 0100000
+ 1000000 | 1000000
+---------------------
+WARNING:Xst:2677 - Node <DIV_CLK_26> of sequential type is unconnected in block <ee201_detour_top>.
+
+Optimizing unit <ee201_detour_top> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ee201_detour_top, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 33
+ Flip-Flops                                            : 33
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ee201_detour_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 95
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 25
+#      LUT2                        : 7
+#      LUT3                        : 1
+#      LUT4                        : 2
+#      LUT5                        : 4
+#      LUT6                        : 2
+#      MUXCY                       : 25
+#      VCC                         : 1
+#      XORCY                       : 26
+# FlipFlops/Latches                : 33
+#      FDC                         : 32
+#      FDP                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 27
+#      IBUF                        : 2
+#      OBUF                        : 25
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              33  out of  18224     0%  
+ Number of Slice LUTs:                   42  out of   9112     0%  
+    Number used as Logic:                42  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     43
+   Number with an unused Flip Flop:      10  out of     43    23%  
+   Number with an unused LUT:             1  out of     43     2%  
+   Number of fully used LUT-FF pairs:    32  out of     43    74%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          28
+ Number of bonded IOBs:                  28  out of    232    12%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)   | Load  |
+-----------------------------------+-------------------------+-------+
+ClkPort                            | BUFGP                   | 26    |
+DIV_CLK_25                         | NONE(SM1/state_FSM_FFd7)| 7     |
+-----------------------------------+-------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.142ns (Maximum Frequency: 466.886MHz)
+   Minimum input arrival time before clock: 2.957ns
+   Maximum output required time after clock: 5.073ns
+   Maximum combinational path delay: 5.292ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ClkPort'
+  Clock period: 2.142ns (frequency: 466.886MHz)
+  Total number of paths / destination ports: 351 / 26
+-------------------------------------------------------------------------
+Delay:               2.142ns (Levels of Logic = 27)
+  Source:            DIV_CLK_0 (FF)
+  Destination:       DIV_CLK_25 (FF)
+  Source Clock:      ClkPort rising
+  Destination Clock: ClkPort rising
+
+  Data Path: DIV_CLK_0 to DIV_CLK_25
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.447   0.579  DIV_CLK_0 (DIV_CLK_0)
+     INV:I->O              1   0.206   0.000  Mcount_DIV_CLK_lut<0>_INV_0 (Mcount_DIV_CLK_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcount_DIV_CLK_cy<0> (Mcount_DIV_CLK_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<1> (Mcount_DIV_CLK_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<2> (Mcount_DIV_CLK_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<3> (Mcount_DIV_CLK_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<4> (Mcount_DIV_CLK_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<5> (Mcount_DIV_CLK_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<6> (Mcount_DIV_CLK_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<7> (Mcount_DIV_CLK_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<8> (Mcount_DIV_CLK_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<9> (Mcount_DIV_CLK_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<10> (Mcount_DIV_CLK_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<11> (Mcount_DIV_CLK_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<12> (Mcount_DIV_CLK_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<13> (Mcount_DIV_CLK_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<14> (Mcount_DIV_CLK_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<15> (Mcount_DIV_CLK_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<16> (Mcount_DIV_CLK_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<17> (Mcount_DIV_CLK_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<18> (Mcount_DIV_CLK_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<19> (Mcount_DIV_CLK_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<20> (Mcount_DIV_CLK_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<21> (Mcount_DIV_CLK_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<22> (Mcount_DIV_CLK_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<23> (Mcount_DIV_CLK_cy<23>)
+     MUXCY:CI->O           0   0.019   0.000  Mcount_DIV_CLK_cy<24> (Mcount_DIV_CLK_cy<24>)
+     XORCY:CI->O           1   0.180   0.000  Mcount_DIV_CLK_xor<25> (Result<25>)
+     FDC:D                     0.102          DIV_CLK_25
+    ----------------------------------------
+    Total                      2.142ns (1.563ns logic, 0.579ns route)
+                                       (73.0% logic, 27.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DIV_CLK_25'
+  Clock period: 1.630ns (frequency: 613.629MHz)
+  Total number of paths / destination ports: 8 / 7
+-------------------------------------------------------------------------
+Delay:               1.630ns (Levels of Logic = 1)
+  Source:            SM1/state_FSM_FFd1 (FF)
+  Destination:       SM1/state_FSM_FFd7 (FF)
+  Source Clock:      DIV_CLK_25 rising
+  Destination Clock: DIV_CLK_25 rising
+
+  Data Path: SM1/state_FSM_FFd1 to SM1/state_FSM_FFd7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.447   0.878  SM1/state_FSM_FFd1 (SM1/state_FSM_FFd1)
+     LUT2:I0->O            1   0.203   0.000  SM1/state_FSM_FFd7-In1 (SM1/state_FSM_FFd7-In)
+     FDP:D                     0.102          SM1/state_FSM_FFd7
+    ----------------------------------------
+    Total                      1.630ns (0.752ns logic, 0.878ns route)
+                                       (46.1% logic, 53.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ClkPort'
+  Total number of paths / destination ports: 26 / 26
+-------------------------------------------------------------------------
+Offset:              2.957ns (Levels of Logic = 1)
+  Source:            BtnC (PAD)
+  Destination:       DIV_CLK_0 (FF)
+  Destination Clock: ClkPort rising
+
+  Data Path: BtnC to DIV_CLK_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            33   1.222   1.305  BtnC_IBUF (BtnC_IBUF)
+     FDC:CLR                   0.430          DIV_CLK_0
+    ----------------------------------------
+    Total                      2.957ns (1.652ns logic, 1.305ns route)
+                                       (55.9% logic, 44.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DIV_CLK_25'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              2.957ns (Levels of Logic = 1)
+  Source:            BtnC (PAD)
+  Destination:       SM1/state_FSM_FFd7 (FF)
+  Destination Clock: DIV_CLK_25 rising
+
+  Data Path: BtnC to SM1/state_FSM_FFd7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            33   1.222   1.305  BtnC_IBUF (BtnC_IBUF)
+     FDP:PRE                   0.430          SM1/state_FSM_FFd7
+    ----------------------------------------
+    Total                      2.957ns (1.652ns logic, 1.305ns route)
+                                       (55.9% logic, 44.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'DIV_CLK_25'
+  Total number of paths / destination ports: 40 / 15
+-------------------------------------------------------------------------
+Offset:              4.926ns (Levels of Logic = 2)
+  Source:            SM1/state_FSM_FFd4 (FF)
+  Destination:       Ld3 (PAD)
+  Source Clock:      DIV_CLK_25 rising
+
+  Data Path: SM1/state_FSM_FFd4 to Ld3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.447   1.089  SM1/state_FSM_FFd4 (SM1/state_FSM_FFd4)
+     LUT5:I0->O            2   0.203   0.616  Ld21 (Ld2_OBUF)
+     OBUF:I->O                 2.571          Ld3_OBUF (Ld3)
+    ----------------------------------------
+    Total                      4.926ns (3.221ns logic, 1.705ns route)
+                                       (65.4% logic, 34.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ClkPort'
+  Total number of paths / destination ports: 22 / 11
+-------------------------------------------------------------------------
+Offset:              5.073ns (Levels of Logic = 2)
+  Source:            DIV_CLK_18 (FF)
+  Destination:       Ce (PAD)
+  Source Clock:      ClkPort rising
+
+  Data Path: DIV_CLK_18 to Ce
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             12   0.447   1.273  DIV_CLK_18 (DIV_CLK_18)
+     LUT6:I0->O            1   0.203   0.579  Ce1 (Ce_OBUF)
+     OBUF:I->O                 2.571          Ce_OBUF (Ce)
+    ----------------------------------------
+    Total                      5.073ns (3.221ns logic, 1.852ns route)
+                                       (63.5% logic, 36.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Delay:               5.292ns (Levels of Logic = 3)
+  Source:            Sw0 (PAD)
+  Destination:       Cd (PAD)
+
+  Data Path: Sw0 to Cd
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.222   0.715  Sw0_IBUF (Sw0_IBUF)
+     LUT5:I4->O            1   0.205   0.579  Cg1 (Cg_OBUF)
+     OBUF:I->O                 2.571          Cg_OBUF (Cg)
+    ----------------------------------------
+    Total                      5.292ns (3.998ns logic, 1.294ns route)
+                                       (75.6% logic, 24.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock ClkPort
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ClkPort        |    2.142|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DIV_CLK_25
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+DIV_CLK_25     |    1.630|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.89 secs
+ 
+--> 
+
+Total memory usage is 243936 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

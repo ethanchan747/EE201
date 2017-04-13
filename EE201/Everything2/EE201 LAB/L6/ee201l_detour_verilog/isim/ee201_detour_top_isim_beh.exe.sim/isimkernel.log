@@ -1,0 +1,28 @@
+Command line:
+   ee201_detour_top_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  1215
+
+Mon Oct 01 16:13:44 2012
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 462.098 Meg
+
+ Total Signals          : 76
+ Total Nets             : 85
+ Total Signal Drivers   : 50
+ Total Blocks           : 7
+ Total Primitive Blocks : 6
+ Total Processes        : 36
+ Total Traceable Variables  : 32
+ Total Scalar Nets and Variables : 280
+
+ Total Simulation Time: 0.09375 sec
+
+ Current Memory Usage: 462.098 Meg
+
+Mon Oct 01 16:14:25 2012
+
