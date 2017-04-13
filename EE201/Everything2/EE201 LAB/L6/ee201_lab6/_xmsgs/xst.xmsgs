@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Xilinx_projects\L6\ee201_lab6\ee201_numlock_top.v" Line 110: Result of <arg fmt="%d" index="1">28</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">27</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Xilinx_projects\L6\ee201_lab6\ee201_lumlock_sm.v" Line 100: Result of <arg fmt="%d" index="1">10</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Xilinx_projects\L6\ee201_lab6\ee201_numlock_top.v" Line 141: Assignment to <arg fmt="%s" index="1">Unlock</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1309" delta="old" >"C:\Xilinx_projects\L6\ee201_lab6\ee201_numlock_top.v" Line 225: Found full_case directive. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/xilinx_projects/l6/ee201_lab6/ee201_numlock_top.v</arg>&quot; line <arg fmt="%s" index="2">141</arg>: Output port &lt;<arg fmt="%s" index="3">Unlock</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">SM1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DIV_CLK_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ee201_numlock_top</arg>&gt;.
+</msg>
+
+</messages>
+
