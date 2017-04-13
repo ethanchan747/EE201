@@ -1,0 +1,4 @@
+library verilog;
+use verilog.vl_types.all;
+entity ee201l_number_lock_ee201l_number_lock_sch_tb is
+end ee201l_number_lock_ee201l_number_lock_sch_tb;
