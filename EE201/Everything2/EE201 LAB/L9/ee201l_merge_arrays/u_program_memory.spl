@@ -1,0 +1,16 @@
+[Inputs]
+=addr[2:0]=
+[Outputs]
+done
+inc_I
+inc_J
+inc_K
+clear
+select_q
+write_EN
+=branch[2:0]=
+=csel[2:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel u_program_memory
+
