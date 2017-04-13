@@ -1,0 +1,286 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Documents and Settings\Administrator\Desktop\stuff\EE2018-\L9\ee201l_merge_arrays
+T_opt
+Z1 VICdM?WR62:iL;mP?9:`nk0
+Z2 04 20 4 work merge_arrays_mcu_top fast 0
+Z3 04 4 4 work glbl fast 0
+Z4 =1-005f06e5837e-508f3523-fa-aa0
+Z5 o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unisims_ver -L secureip +acc
+Z6 n@_opt
+Z7 OE;O;10.0c;49
+Z8 dC:\Documents and Settings\Administrator\Desktop\stuff\EE2018-\L9\ee201l_merge_arrays
+T_opt1
+Z9 VV8[lZWlW9YH2hG]3Q^Y_d2
+Z10 04 18 4 work merge_array_mcu_tb fast 0
+R3
+Z11 =1-005f06e5837e-508f355a-37a-d14
+R5
+Z12 n@_opt1
+R7
+R8
+varray_P_ROM
+Z13 ITIH`S0T[]:b:chSIOdBll1
+Z14 VA4dm]Z:2W:mhGYai]Ad4N1
+R8
+Z15 w1348514804
+Z16 8array_P_ROM.v
+Z17 Farray_P_ROM.v
+L0 21
+Z18 OE;L;10.0c;49
+r1
+31
+Z19 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+Z20 narray_@p_@r@o@m
+Z21 !s100 P<2BleR46YbmGP`Ya?`OZ3
+Z22 !s90 -reportprogress|300|array_P_ROM.v|
+Z23 !s108 1351562584.406000
+Z24 !s107 array_P_ROM.v|
+!s85 0
+varray_Q_ROM
+Z25 IWezXf0STFT2e9ml?JMliC2
+Z26 Vh`LRWekahHizHD>h@k4cg2
+R8
+R15
+Z27 8array_Q_ROM.v
+Z28 Farray_Q_ROM.v
+L0 21
+R18
+r1
+31
+R19
+Z29 narray_@q_@r@o@m
+Z30 !s100 <@GEOQHHo1m;OhCEI=Q[g2
+Z31 !s90 -reportprogress|300|array_Q_ROM.v|
+Z32 !s108 1351562584.265000
+Z33 !s107 array_Q_ROM.v|
+!s85 0
+varray_R_RAM
+Z34 ICHAPS7GC:jl@lXAc=WQ]33
+Z35 VK]0:3470bVckl8PgNZ6VL0
+R8
+R15
+Z36 8array_R_RAM.v
+Z37 Farray_R_RAM.v
+L0 21
+R18
+r1
+31
+R19
+Z38 narray_@r_@r@a@m
+Z39 !s100 KGOcBNQ`^lh97zKSbd><D3
+Z40 !s90 -reportprogress|300|array_R_RAM.v|
+Z41 !s108 1351562584.156000
+Z42 !s107 array_R_RAM.v|
+!s85 0
+vCB2CE_HXILINX_merge_arrays_mcu
+Z43 IA415Ca3haOMoHd54?BCJk2
+Z44 V`V8VQ<_lcefLCZgcTJ`P71
+R8
+Z45 w1351562493
+Z46 8merge_arrays_mcu.vf
+Z47 Fmerge_arrays_mcu.vf
+Z48 L0 141
+R18
+r1
+31
+Z49 !s108 1351562584.562000
+Z50 !s107 merge_arrays_mcu.vf|
+Z51 !s90 -reportprogress|300|merge_arrays_mcu.vf|
+R19
+Z52 n@c@b2@c@e_@h@x@i@l@i@n@x_merge_arrays_mcu
+Z53 !s100 97n5B8`BdbAhMN4m27`Wo3
+!s85 0
+vCB4CE_HXILINX_merge_arrays_mcu
+Z54 I50c1lZ08nef7?[[Ylhc0;0
+Z55 VABazCojZ[0iF0BcI5fLCm3
+R8
+R45
+R46
+R47
+L0 44
+R18
+r1
+31
+R49
+R50
+R51
+R19
+Z56 n@c@b4@c@e_@h@x@i@l@i@n@x_merge_arrays_mcu
+Z57 !s100 A`z>CUVZ?VNNHSi[<?K9M3
+!s85 0
+vCOMPM4_HXILINX_merge_arrays_mcu
+Z58 IU4KifnYe>4]Tb]3HWGDd61
+Z59 VdcG7RnUQJ79oDVUBN`3IF2
+R8
+R45
+R46
+R47
+L0 23
+R18
+r1
+31
+R49
+R50
+R51
+R19
+Z60 n@c@o@m@p@m4_@h@x@i@l@i@n@x_merge_arrays_mcu
+Z61 !s100 JRzVYdkgG6:mTU;YS]mG61
+!s85 0
+vcounter_3bit
+Z62 I^WYYb@Xo?:JeL4Z[c2oJT3
+Z63 VXEnEU>g7KP3m]Q^<U9MhM3
+R8
+R15
+Z64 8counter_3bit.v
+Z65 Fcounter_3bit.v
+L0 16
+R18
+r1
+31
+R19
+Z66 !s100 h`CK@52m1WY8R<nfT37H00
+Z67 !s90 -reportprogress|300|counter_3bit.v|
+Z68 !s108 1351562584.031000
+Z69 !s107 counter_3bit.v|
+!s85 0
+vglbl
+Z70 I:609Ji6AoC`RMk3BhhbY=1
+Z71 VM[9mS]S:KA1i4VeCMX35[3
+R8
+Z72 w1308634177
+Z73 8C:/Xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v
+Z74 FC:/Xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v
+L0 5
+R18
+r1
+31
+R19
+Z75 !s100 4=LmVFjWGlXARKf5L_9V<3
+Z76 !s90 -reportprogress|300|C:/Xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v|
+!s85 0
+Z77 !s108 1351562585.359000
+Z78 !s107 C:/Xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v|
+vINV4_HXILINX_merge_arrays_mcu
+Z79 IL1>`[mQCd]ij6LQRZiZ3_1
+Z80 VRSSldTF0>OD1?5`]ln84d0
+R8
+R45
+R46
+R47
+Z81 L0 120
+R18
+r1
+31
+R49
+R50
+R51
+R19
+Z82 n@i@n@v4_@h@x@i@l@i@n@x_merge_arrays_mcu
+Z83 !s100 J?6b9gOPzlRc1gbhe:OGg2
+!s85 0
+vM8_1E_HXILINX_merge_arrays_mcu
+Z84 ITziHBhVS@gZGJZF5XNEG?3
+Z85 VH:i_=Dn=Uoj[jQl02A[VM1
+R8
+R45
+R46
+R47
+L0 78
+R18
+r1
+31
+R49
+R50
+R51
+R19
+Z86 n@m8_1@e_@h@x@i@l@i@n@x_merge_arrays_mcu
+Z87 !s100 OWm<dYlX=0GAJdHU9z7^A1
+!s85 0
+vmerge_array_mcu_tb
+Z88 IW010TA:CL[j<NIkCn_Od?1
+Z89 VY1h7NzFaG`iP:fNGWCaA52
+R8
+Z90 w1348514806
+Z91 8merge_arrays_mcu_tb.v
+Z92 Fmerge_arrays_mcu_tb.v
+L0 4
+R18
+r1
+31
+R19
+Z93 !s100 46@Q:jczi7B[SIi_czX?91
+Z94 !s108 1351562585.031000
+Z95 !s107 merge_arrays_mcu_tb.v|
+Z96 !s90 -reportprogress|300|merge_arrays_mcu_tb.v|
+!s85 0
+vmerge_arrays_mcu
+Z97 IJENN2eR5NkYQkQTAEeT7M1
+Z98 V5TSzTZ>fg^?G2^=f;;A_S0
+R8
+R45
+R46
+R47
+Z99 L0 171
+R18
+r1
+31
+R49
+R50
+R51
+R19
+Z100 !s100 9PT=C[8Y2JAB??3GH0Z4N3
+!s85 0
+vmerge_arrays_mcu_top
+Z101 IfUPM_`ZA[1]d6I0]bW6@23
+Z102 VaajeZ1nN3J@F4W8zI6X0`1
+R8
+Z103 w1351561385
+Z104 8merge_arrays_mcu_top.v
+Z105 Fmerge_arrays_mcu_top.v
+L0 18
+R18
+r1
+31
+R19
+Z106 !s100 hQ3^_YZ=[`<[bJQfVQP6=0
+Z107 !s108 1351562528.640000
+Z108 !s107 merge_arrays_mcu_top.v|
+Z109 !s90 -reportprogress|300|merge_arrays_mcu_top.v|
+!s85 0
+vmux_2_to_1
+Z110 I3j[@MTQVBEWbOnFGUX=[o3
+Z111 VB>VQHERAc:n;S=Q]lmG4J3
+R8
+R90
+Z112 8mux_2_to_1.v
+Z113 Fmux_2_to_1.v
+L0 21
+R18
+r1
+31
+R19
+Z114 !s100 T@n]@DfD4?;MDV@XC4^Rb2
+Z115 !s90 -reportprogress|300|mux_2_to_1.v|
+Z116 !s108 1351562583.859000
+Z117 !s107 mux_2_to_1.v|
+!s85 0
+vu_program_memory
+Z118 I0?j3a`N7LCO<L^MfVONL`0
+Z119 V8NS2n<Czk?mW7G>DF0;Ro0
+R8
+Z120 w1351562227
+Z121 8u_program_memory.v
+Z122 Fu_program_memory.v
+L0 16
+R18
+r1
+31
+R19
+Z123 !s100 A@QU;2mg3Bfl<=omS3Ib]1
+Z124 !s90 -reportprogress|300|u_program_memory.v|
+Z125 !s108 1351562583.734000
+Z126 !s107 u_program_memory.v|
+!s85 0
